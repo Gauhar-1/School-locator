@@ -1,7 +1,7 @@
 export  const calculateDistance = (lat1, lon1, lat2, lon2) => {
   const toRad = degree => degree * (Math.PI / 180);
   const R = 6371; 
-  const dLat = toRad(lat2 - lat1);
+  const dLat = toRad(lat2 - lat1)
   const dLon = toRad(lon2 - lon1);
 
   const a =
