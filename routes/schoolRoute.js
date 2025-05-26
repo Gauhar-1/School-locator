@@ -1,10 +1,12 @@
 import { Router } from 'express';
-import { addSchool, listSchools } from '../controllers/schoolControllers.js';
+import { addContent, listContents, listShortlisted, updateShortlisted } from '../controllers/ContentControllers.js';
 
 const router = Router();
 
-router.post('/addSchool', addSchool);
-router.get('/listSchools', listSchools);
+router.post('/addContent', addContent);
+router.get('/listContents', listContents);
+router.post('/update', updateShortlisted);
+router.get('/shortlist', listShortlisted);
 
 export default router;
 
